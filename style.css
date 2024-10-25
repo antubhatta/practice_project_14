@@ -1,1 +1,113 @@
 /* shared related styles */
+.poppins{
+    font-family: "Poppins", sans-serif;
+}
+.inter{
+    font-family: "Inter", sans-serif;
+}
+header{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+/* nav related styles */
+.nav-title{
+    color: rgb(58, 58, 58);
+font-size: 1.5rem;
+font-weight: 700;
+}
+.nav-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav > ul{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+nav li{
+    list-style-type: none;
+}
+nav li a{
+    text-decoration: none;
+    color: rgb(58, 58, 58);
+font-size: 1rem;
+font-weight: 600;
+}
+/* hero section */
+.hero-content{
+    width: 550px;
+}
+.hero-title{
+    color: rgb(58, 58, 58);
+font-size: 3.25rem;
+font-weight: 700;
+}
+.hero-desc{
+    color: rgb(58, 58, 58);
+font-size: 1rem;
+font-weight: 600;
+margin-top: -42px;
+}
+.hero-btn{
+    border-radius: 41px;
+background: rgb(224, 44, 109);
+padding: 10px 24px;
+color: rgb(255, 255, 255);
+font-size: 1rem;
+font-weight: 700;
+border: none;
+}
+.hero-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.hero-img{
+    margin-top: 60px;
+    background-image: url('./images/Circle\ design.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+/* mobile device responsive */
+@media screen and (max-width:576px) {
+    .nav-container,.hero-container{
+        flex-direction: column;
+    }
+    nav > ul{
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    /* hero */
+    .hero-pic{
+        width: 100%;
+    }
+    .hero-content{
+        width: 100%;
+    }
+    .hero-title{
+    font-size: 1.5rem;
+    }
+    .hero-desc{
+    margin-top: 24px;
+    }
+    .hero-container{
+        padding: 20px;
+        text-align: center;
+    }
+   
+    
+}
+/* tablet medium device responsive */
+@media screen and (min-width: 577px) and (max-width:992px) {
+    .nav-container, .hero-container{
+        flex-direction: column;
+    }
+    .hero-container{
+        padding: 20px;
+        text-align: center;
+    }
+}
