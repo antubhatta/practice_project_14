@@ -9,6 +9,10 @@ header{
     max-width: 1140px;
     margin: 0 auto;
 }
+main{
+    max-width: 1044px;
+    margin: 0 auto;
+}
 /* nav related styles */
 .nav-title{
     color: rgb(58, 58, 58);
@@ -71,6 +75,15 @@ border: none;
     background-position: center;
 
 }
+/* logo section */
+.logo-container{
+    /* display: grid;
+    grid-template-columns: repeat(7,1fr); */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 90px;
+}
 
 /* mobile device responsive */
 @media screen and (max-width:576px) {
@@ -98,7 +111,13 @@ border: none;
         padding: 20px;
         text-align: center;
     }
-   
+    .logo-container{
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 20px;
+        margin-top: 40px;
+    }
+
     
 }
 /* tablet medium device responsive */
@@ -109,5 +128,9 @@ border: none;
     .hero-container{
         padding: 20px;
         text-align: center;
+    }
+    .logo-container{
+        flex-wrap: wrap;
+        padding: 30px;
     }
 }
